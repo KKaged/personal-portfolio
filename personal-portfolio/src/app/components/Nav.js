@@ -29,8 +29,7 @@ export default function Nav() {
         {navData.map((navItem) => (
           <li>
             <a
-              className="px-3 py-2 font-extralight rounded navButton hover:color: rgb(228 228 231);
-              "
+              className="px-3 py-2 font-extralight rounded navButton hover:text-zinc-200"
               href={navItem.url}
             >
               {navItem.name}
