@@ -15,7 +15,7 @@ export default function Home() {
 
   return (
     <>
-      <Nav>
+      <Nav clasName={"display-flex justify-center"}>
         {NavData.map((NavItem) => (
           <NavButton
             key={NavItem.id}
@@ -26,7 +26,7 @@ export default function Home() {
         ))}
       </Nav>
       <Main>
-        <h3>{selectedPage}</h3>
+        <h1>{selectedPage}</h1>
       </Main>
     </>
   );
