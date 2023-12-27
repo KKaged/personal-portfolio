@@ -25,9 +25,7 @@ export default function Home() {
           </NavButton>
         ))}
       </Nav>
-      <Main>
-        <h1>{selectedPage}</h1>
-      </Main>
+      <Main></Main>
     </>
   );
 }
