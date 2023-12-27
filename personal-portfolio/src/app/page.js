@@ -29,8 +29,8 @@ export default function Home() {
       <Main>
         {selectedPage === "Blog" ? (
           <>
-            <h1>Daniel</h1>
-            <p>He is a really cool guy</p>
+            <h1>Blog</h1>
+            <p>Learning is cool</p>
           </>
         ) : (
           <About />
