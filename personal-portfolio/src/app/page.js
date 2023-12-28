@@ -19,7 +19,7 @@ export default function Home() {
 
   return (
     <>
-      <Nav className={"display-flex justify-center"}>
+      <Nav className={"flex justify-center"}>
         {NavData.map((NavItem) => (
           <NavButton
             key={NavItem.id}

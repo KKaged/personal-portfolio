@@ -20,3 +20,9 @@
   background-color: rgb(17, 17, 17);
   color: rgb(161 161 170);
 }
+
+body {
+  padding-left: 5rem;
+  padding-right: 5rem;
+
+}

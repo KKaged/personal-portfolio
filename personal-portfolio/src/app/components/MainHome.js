@@ -3,7 +3,7 @@
 export default function Main({ children }) {
   return (
     <>
-      <main className="flex h-screen justify-center">{children}</main>
+      <main className="flex px-64 h-screen">{children}</main>
     </>
   );
 }
