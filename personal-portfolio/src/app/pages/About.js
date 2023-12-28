@@ -1,4 +1,5 @@
 import Work from "../components/Work";
+import AboutBlog from "../components/AboutBlog";
 
 export default function About() {
   return (
@@ -22,6 +23,7 @@ export default function About() {
           </p>
         </div>
         <Work />
+        <AboutBlog />
       </div>
     </>
   );
