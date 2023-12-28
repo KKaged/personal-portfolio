@@ -23,7 +23,9 @@ export default function About() {
           </p>
         </div>
         <Work />
-        <AboutBlog />
+        <AboutBlog>
+          <a>See More</a>
+        </AboutBlog>
       </div>
     </>
   );
