@@ -4,11 +4,14 @@ import React, { useState } from "react";
 import Nav from "./components/Nav";
 import Main from "./components/MainHome";
 import About from "./pages/About";
+import Blog from "./pages/Blog";
+import Contact from "./pages/Contact";
+import Projects from "./pages/Projects";
 import NavButton from "./components/Button";
 import { NavData } from "./data";
 
 export default function Home() {
-  const [selectedPage, setPage] = useState(null);
+  const [selectedPage, setPage] = useState();
 
   function handlePageChange(page) {
     setPage(page);
@@ -27,14 +30,11 @@ export default function Home() {
         ))}
       </Nav>
       <Main>
-        {selectedPage === "Blog" ? (
-          <>
-            <h1>Blog</h1>
-            <p>Learning is cool</p>
-          </>
-        ) : (
-          <About />
-        )}
+        {!selectedPage && <About />}
+        {selectedPage === "About" && <About />}
+        {selectedPage === "Blog" && <Blog />}
+        {selectedPage === "Projects" && <Projects />}
+        {selectedPage === "Contact" && <Contact />}
       </Main>
     </>
   );

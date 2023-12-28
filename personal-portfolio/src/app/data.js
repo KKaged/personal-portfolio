@@ -1,9 +1,9 @@
 export const NavData = [
-  // {
-  //   id: 1,
-  //   name: "About",
-  //   url: "#",
-  // },
+  {
+    id: 1,
+    name: "About",
+    url: "#",
+  },
   {
     id: 2,
     name: "Blog",
