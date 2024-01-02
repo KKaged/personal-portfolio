@@ -5,6 +5,7 @@ export default function BlogPost({ blogTitle, postDate, story }) {
       <h2 className="font-light text-white group-hover:bg-zinc-900">
         {blogTitle}
       </h2>
+      {/* <p className="group-hover:bg-zinc-900">{story}</p> */}
     </div>
   );
 }
