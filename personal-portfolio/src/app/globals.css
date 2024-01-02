@@ -24,5 +24,8 @@
 body {
   padding-left: 5rem;
   padding-right: 5rem;
+}
 
+.active {
+  background-color: rgb(24 24 27);
 }

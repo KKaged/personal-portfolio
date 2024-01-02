@@ -11,7 +11,7 @@ import NavButton from "./components/Button";
 import { NavData } from "./data";
 
 export default function Home() {
-  const [selectedPage, setPage] = useState();
+  const [selectedPage, setPage] = useState("About");
 
   function handlePageChange(page) {
     setPage(page);
@@ -22,6 +22,7 @@ export default function Home() {
       <Nav className={"flex justify-center"}>
         {NavData.map((NavItem) => (
           <NavButton
+            isSelected={selectedPage === NavItem.name}
             key={NavItem.id}
             onSelect={() => handlePageChange(NavItem.name)}
           >
